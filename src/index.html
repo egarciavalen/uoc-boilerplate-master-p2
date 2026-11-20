@@ -1,11 +1,37 @@
 <!doctype html>
 
-<html>
+<!-- Especificación del idioma -->
+<html lang="es-ES">
+
   <head>
+    <!-- Metadatos -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
-    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss" />
+
+    <!-- Autor/Descripción -->
+    <meta name="author" content="Efrén García Valencia" />
+    <meta
+      name="description"
+      content="Portada del trabajo PEC 2 de la asignatura de HTML y CSS II"
+    />
+
+    <!-- Enlace al CSS -->
+    <link rel="stylesheet" href="./assets/styles/main.scss" />
+
+    <!-- Título -->
+    <title>Inicio</title>
   </head>
+
+
   <body>
 
+    <!-- Navegación -->
+    <include src="./views/navigation.html"></include>
+
+    <!-- Pie de página -->
+    <include src="./views/footer.html"></include>
+
+    <!-- Línea adicional que el boilerplate dice que no hay que borrar -->
+    <script type="module" src="./assets/scripts/main.js"></script>
+  </body>
 </html>
