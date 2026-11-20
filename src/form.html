@@ -33,21 +33,42 @@
       <p></p>
 
       <form>
+        
+        <!-- Nombre -->
         <div>
-          <!-- Nombre -->
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" placeholder="Nombre" aria-describedby="nombreHelp">
+          <div id="emailHelp">Nombre del participante</div>
         </div>
+
+        <!-- Primer apellido -->
         <div>
-          <!-- Primer apellido -->
+          <label for="primerApellido">Primer apellido</label>
+          <input type="text" id="primerApellido" placeholder="Primer apellido" aria-describedby="primerApellidoHelp">
+          <div id="primerApellidoHelp">Primer apellido del participante</div>
         </div>
+
+        <!-- Segundo apellido -->
         <div>
-          <!-- Segundo apellido -->
+          <label for="segundoApellido">Segundo apellido</label>
+          <input type="text" id="segundoApellido" placeholder="Segundo apellido" aria-describedby="segundoApellidoHelp">
+          <div id="segundoApellidoHelp">Segundo apellido del participante</div>
         </div>
+
+        <!-- Correo electrónico -->
         <div>
-          <!-- Correo electrónico -->
+          <label for="correoElectronico">Correo electrónico</label>
+          <input type="email" id="correoElectronico" aria-describedby="correoElectronicoHelp">
+          <div id="correoElectronicoHelp">Recibirá una notificación en su correo electrónico con más detalles para participar.</div>
         </div>
+
+        <!-- Motivo de la participación -->
         <div>
-          <!-- Motivo de la participación -->
+          <label for="motivo">Motivo de la participación</label>
+          <input type="text" id="motivo" aria-describedby="motivoHelp">
+          <div id="motivoHelp">Indique en mayor detalle los motivos por los que está interesado en participar.</div>
         </div>
+
         <!-- Envío del formulario -->
         <button type="submit">Enviar formulario</button>
       </form>
