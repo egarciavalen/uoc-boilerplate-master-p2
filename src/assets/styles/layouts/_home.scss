@@ -1,1 +1,23 @@
-@use "../variables";
+// En el fichero home se hará uso de todo el CSS dividido en capas
+
+// Settings
+@use 'settings/variables';
+
+// Tools
+@use 'tools/mixins';
+@use 'tools/functions';
+
+// Generic
+@use 'generic/reset';
+
+// Elements
+//@use 'elements/*';
+
+// Object
+//@use 'objects/*';
+
+// Component
+//@use 'components/*';
+
+// Utilities
+//@use 'utilities/*';
