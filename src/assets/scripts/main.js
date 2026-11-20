@@ -17,3 +17,6 @@
 
 // Importación de Bootstrap
 import * as bootstrap from 'bootstrap';
+
+// Importación de la fuente de letra Lexend
+import '@fontsource-variable/lexend';
