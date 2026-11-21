@@ -11,13 +11,19 @@
 @use 'generic/reset';
 
 // Elements
-//@use 'elements/*';
+@use 'elements/paragraph';
+@use 'elements/link';
+@use 'elements/list';
+@use 'elements/image';
+
 
 // Object
-//@use 'objects/*';
+@use 'objects/objects';
 
 // Component
-//@use 'components/*';
+@use 'components/footer';
+@use 'components/logo';
 
 // Utilities
-//@use 'utilities/*';
+@use 'utilities/color';
+@use 'utilities/border';

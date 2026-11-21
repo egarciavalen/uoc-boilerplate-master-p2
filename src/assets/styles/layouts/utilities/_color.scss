@@ -1,0 +1,9 @@
+@use "../settings/variables";
+
+.u-color--alternate {
+  color: variables.$alternate-font-color;
+}
+
+.u-fill--alternate {
+  fill: variables.$alternate-element-color;
+}

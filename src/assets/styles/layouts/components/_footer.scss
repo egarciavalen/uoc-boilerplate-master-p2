@@ -1,0 +1,16 @@
+@use "../settings/variables";
+
+.c-footer {
+  background-color: variables.$background-primary-color;
+  padding-top: 2rem;
+}
+
+.c-footer__contact {
+  padding-bottom: 1rem;
+}
+
+.c-footer__uoc {
+  background-color: variables.$background-uoc-color;
+  padding-block: 2rem;
+}
+

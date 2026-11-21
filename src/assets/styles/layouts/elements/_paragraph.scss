@@ -1,0 +1,6 @@
+@use "../settings/variables";
+
+p {
+  font-size: 1.8rem;
+  color: variables.$normal-font-color;
+}

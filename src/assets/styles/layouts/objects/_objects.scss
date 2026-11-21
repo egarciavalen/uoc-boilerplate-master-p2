@@ -1,0 +1,19 @@
+@use "../settings/variables";
+
+.o-svg {
+  max-width: 3rem;
+}
+
+.o-container {
+  max-width: 80%;
+  height: auto;
+  margin-inline: auto;
+}
+
+.o-container--reduced {
+  max-width: 60%;
+}
+
+.o-container--expanded {
+  max-width: 90%;
+}

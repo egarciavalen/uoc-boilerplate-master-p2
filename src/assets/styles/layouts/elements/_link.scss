@@ -1,0 +1,10 @@
+@use "../settings/variables";
+
+a {
+  padding: 0.1rem;
+  font-size: 1.8rem;
+}
+
+a:hover {
+  text-decoration: none;
+}
