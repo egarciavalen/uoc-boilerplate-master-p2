@@ -1,0 +1,26 @@
+.o-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.o-flex__element {
+  flex: 1;
+  gap: 0.5rem;
+}
+
+.o-flex__element--expanded {
+  flex: 3;
+}
+
+.o-flex__element--start {
+  justify-content: start;
+}
+
+.o-flex__element--space {
+  justify-content: space-between;
+}
+
+.o-flex__element--end {
+  justify-content: end;
+}

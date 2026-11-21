@@ -18,7 +18,9 @@
 
 
 // Object
-@use 'objects/objects';
+@use 'objects/container';
+@use 'objects/flex';
+@use 'objects/svg';
 
 // Component
 @use 'components/footer';
