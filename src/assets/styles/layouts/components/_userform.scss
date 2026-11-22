@@ -1,0 +1,8 @@
+@use "../settings/variables";
+
+.c-userform {
+  background-color: variables.$background-tertiary-color;
+  border: 0.3rem solid variables.$background-primary-color;
+  border-radius: 5%;
+}
+

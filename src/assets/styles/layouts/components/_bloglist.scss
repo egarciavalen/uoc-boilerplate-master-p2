@@ -1,0 +1,9 @@
+@use "../settings/variables";
+
+.c-bloglist {
+  background-color: variables.$background-tertiary-color;
+  border: 0.3rem solid variables.$background-primary-color;
+  padding-block: 1.5rem;
+  border-radius: 5%;
+}
+
