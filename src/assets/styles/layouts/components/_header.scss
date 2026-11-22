@@ -1,0 +1,15 @@
+@use "../settings/variables";
+
+.c-header {
+  background-color: variables.$background-primary-color;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.c-header__nav {
+  padding-bottom: 1rem;
+}
+
+.c-header__nav--gap {
+  gap: 2rem;
+}

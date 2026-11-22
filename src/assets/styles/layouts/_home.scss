@@ -16,7 +16,6 @@
 @use 'elements/list';
 @use 'elements/image';
 
-
 // Object
 @use 'objects/container';
 @use 'objects/flex';
@@ -24,6 +23,7 @@
 
 // Component
 @use 'components/footer';
+@use 'components/header';
 @use 'components/logo';
 
 // Utilities
