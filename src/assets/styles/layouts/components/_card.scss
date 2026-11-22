@@ -4,6 +4,7 @@
   background-color: variables.$background-primary-color;
   text-align: center;
   min-width: 20rem;
+  max-width: 20rem;
 }
 
 .c-card__body {
@@ -23,6 +24,5 @@
 .c-card__img {
   padding: 0.5rem;
   max-height: 30rem;
-  object-fit: cover;
   background-color: variables.$background-primary-color;
 }

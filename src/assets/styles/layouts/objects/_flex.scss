@@ -16,9 +16,12 @@
   flex: 3;
 }
 
-
 .o-flex__item--start {
   justify-content: start;
+}
+
+.o-flex__item--center {
+  justify-content: center;
 }
 
 .o-flex__item--space {
