@@ -1,0 +1,28 @@
+@use "../settings/variables";
+
+.c-card {
+  background-color: variables.$background-primary-color;
+  text-align: center;
+  min-width: 20rem;
+}
+
+.c-card__body {
+  background-color: variables.$background-tertiary-color;
+  border: 0.3rem solid variables.$background-primary-color;
+}
+
+.c-card__title {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.c-card__text {
+  font-size: 1.3rem;
+}
+
+.c-card__img {
+  padding: 0.5rem;
+  max-height: 30rem;
+  object-fit: cover;
+  background-color: variables.$background-primary-color;
+}
