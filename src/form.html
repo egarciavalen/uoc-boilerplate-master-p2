@@ -24,6 +24,9 @@
 
   <body>
 
+    <!-- COMPONENTE BOOTSTRAP: uso de forms -->
+    <!-- COMPONENTE BOOTSTRAP: uso de button -->
+
     <!-- Cabecera -->
     <include src="./views/header.html"></include>
 
@@ -36,39 +39,39 @@
       <form>
         
         <!-- Nombre -->
-        <div>
-          <label for="nombre">Nombre</label>
-          <input id="nombre" type="text" placeholder="Nombre">
+        <div class="mb-3">
+          <label class="form-label" for="nombre">Nombre</label>
+          <input class="form-control" id="nombre" type="text" placeholder="Nombre">
         </div>
 
         <!-- Primer apellido -->
-        <div>
-          <label for="primerApellido">Primer apellido</label>
-          <input id="primerApellido" type="text" placeholder="Primer apellido">
+        <div class="mb-3">
+          <label class="form-label" for="primerApellido">Primer apellido</label>
+          <input class="form-control" id="primerApellido" type="text" placeholder="Primer apellido">
         </div>
 
         <!-- Segundo apellido -->
-        <div>
-          <label for="segundoApellido">Segundo apellido</label>
-          <input id="segundoApellido" type="text" placeholder="Segundo apellido">
+        <div class="mb-3">
+          <label class="form-label" for="segundoApellido">Segundo apellido</label>
+          <input class="form-control" id="segundoApellido" type="text" placeholder="Segundo apellido">
         </div>
 
         <!-- Correo electrónico -->
-        <div>
-          <label for="correoElectronico">Correo electrónico</label>
-          <input id="correoElectronico" type="email" aria-describedby="correoElectronicoHelp">
-          <div id="correoElectronicoHelp">Recibirá una notificación en su correo electrónico con más detalles para participar.</div>
+        <div class="mb-3">
+          <label class="form-label" for="correoElectronico">Correo electrónico</label>
+          <input class="form-control" id="correoElectronico" type="email" aria-describedby="correoElectronicoHelp">
+          <div class="form-text" id="correoElectronicoHelp">Recibirá una notificación en su correo electrónico con más detalles para participar.</div>
         </div>
 
         <!-- Motivo de la participación -->
-        <div>
-          <label for="motivo">Motivo de la participación</label>
-          <input id="motivo" type="text" aria-describedby="motivoHelp">
-          <div id="motivoHelp">Indique en mayor detalle los motivos por los que está interesado en participar.</div>
+        <div class="mb-3">
+          <label class="form-label" for="motivo">Motivo de la participación</label>
+          <input class="form-control" id="motivo" type="text" aria-describedby="motivoHelp">
+          <div class="form-text" id="motivoHelp">Indique en mayor detalle los motivos por los que está interesado en participar.</div>
         </div>
 
         <!-- Envío del formulario -->
-        <button type="submit">Enviar formulario</button>
+        <button class="btn btn-primary" type="submit">Enviar formulario</button>
       </form>
 
     </main>
