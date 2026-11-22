@@ -11,6 +11,8 @@
 @use 'generic/reset';
 
 // Elements
+@use 'elements/body';
+@use 'elements/main';
 @use 'elements/paragraph';
 @use 'elements/link';
 @use 'elements/list';
