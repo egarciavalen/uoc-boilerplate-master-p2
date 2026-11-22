@@ -1,10 +1,10 @@
 @use "../settings/variables";
 
-.u-border_top {
+.u-border__top {
   border-top: 0.1rem solid variables.$normal-element-color;
 }
 
 
-.u-border_top--alternate {
+.u-border__top--alternate {
   border-color: variables.$alternate-element-color;
 }
