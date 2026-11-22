@@ -4,23 +4,27 @@
   align-items: flex-start;
 }
 
-.o-flex__element {
-  flex: 1;
-  gap: 0.5rem;
+.o-flex--gap {
+  gap: 2rem;
 }
 
-.o-flex__element--expanded {
+.o-flex__item {
+  flex: 1;
+}
+
+.o-flex__item--expanded {
   flex: 3;
 }
 
-.o-flex__element--start {
+
+.o-flex__item--start {
   justify-content: start;
 }
 
-.o-flex__element--space {
+.o-flex__item--space {
   justify-content: space-between;
 }
 
-.o-flex__element--end {
+.o-flex__item--end {
   justify-content: end;
 }
