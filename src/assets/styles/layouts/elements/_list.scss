@@ -5,6 +5,31 @@ ul {
 }
 
 ol {
-  font-size:1.5rem;
+  // Se quitan las listas por defecto
+  list-style: none;
+  // Reinicio para eliminar los números por defecto 
+  counter-reset: item;  
   color: variables.$normal-font-color;
+  font-size:1.5rem;
+
+}
+
+ol li {
+  margin-right: 0.5rem;
+}
+
+ol > li::before {
+  // Separación de los elementos
+  display: inline-block;
+  // Gestión del contador
+  content: counter(item);
+  counter-increment: item;
+  // Color + color de fondo
+  background-color: variables.$background-primary-color;
+  color: white;
+  // Borde
+  border: 0.2rem solid variables.$background-primary-color;
+  border-radius: 50%;
+  // Margen interno para que se vea bien
+  padding-inline: 0.75rem;
 }
