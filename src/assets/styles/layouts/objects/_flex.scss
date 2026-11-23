@@ -1,6 +1,5 @@
 .o-flex {
   display: flex;
-  flex-wrap: wrap;
   align-items: flex-start;
 }
 
@@ -8,8 +7,16 @@
   gap: 2rem;
 }
 
+.o-flex--wrap {
+  flex-wrap: wrap;
+}
+
 .o-flex__item {
   flex: 1;
+}
+
+.o-flex__item--semiexpanded {
+  flex: 2;
 }
 
 .o-flex__item--expanded {
