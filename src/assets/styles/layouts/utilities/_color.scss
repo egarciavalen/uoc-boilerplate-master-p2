@@ -7,3 +7,11 @@
 .u-fill--alternate {
   fill: variables.$alternate-element-color;
 }
+
+
+.u-text--background {
+  background-color: variables.$background-primary-color;
+  color: variables.$alternate-element-color;
+  padding: 1rem;
+  border-radius: 10%;
+}
