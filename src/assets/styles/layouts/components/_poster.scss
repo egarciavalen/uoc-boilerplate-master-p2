@@ -1,0 +1,58 @@
+@use "../settings/variables";
+
+
+.c-poster__jornadas {
+  display: inline-block;
+  margin: 2rem;
+}
+
+.c-poster__enlace {
+  background-color: variables.$background-tertiary-color;
+  padding: 1rem;
+  margin: 2rem;
+  border: 0.2rem solid variables.$normal-element-color;
+  font-weight: bold; 
+  text-decoration: none;
+}
+
+
+@supports (display: grid) {
+  @media (min-width: 42rem) and (min-height: 27rem) {
+
+    .c-poster {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-template-areas:
+        ". . a a"
+        "b b . c"
+        "d . e e";
+    }
+
+    .c-poster__image {
+      grid-area: 1 / 1 / -1 / -1;
+    }
+
+    .c-poster__title--one {
+      grid-area: a;
+    }
+
+    .c-poster__title--two {
+      grid-area: b;
+    }
+
+    .c-poster__title--three {
+      grid-area: e;
+    }
+
+    .c-poster__jornadas {
+      grid-area: d;
+      background-color: variables.$background-primary-color;
+      color: variables.$alternate-font-color;
+    }
+
+    .c-poster__enlace {
+      grid-area: c;
+    }
+  }
+}

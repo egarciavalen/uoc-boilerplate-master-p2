@@ -36,9 +36,9 @@
 @use 'components/card';
 @use 'components/bloglist';
 @use 'components/userform';
-@use 'components/blogheader';
+@use 'components/poster';
 
 // Utilities
-@use 'utilities/color';
+@use 'utilities/text';
 @use 'utilities/border';
 @use 'utilities/position';

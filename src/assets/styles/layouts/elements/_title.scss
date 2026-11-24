@@ -1,8 +1,7 @@
 @use "../settings/variables";
 
 h1 {
-  text-align: center;
-  margin-top: 1rem;
-  margin-bottom: 3rem;
+  display: inline-block;
+  margin-block: 1rem;
   font-weight: bold;
 }
