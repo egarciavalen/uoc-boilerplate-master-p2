@@ -4,10 +4,26 @@
 .c-poster__jornadas {
   display: inline-block;
   margin: 2rem;
+  border-radius: 10%;
+}
+
+.c-poster__title--one {
+  border-radius: 10%;
+}
+
+.c-poster__title--two {
+  border-radius: 10%;
+}
+
+.c-poster__title--three {
+  border-radius: 10%;
 }
 
 .c-poster__enlace {
-  background-color: variables.$background-tertiary-color;
+  display: block;
+  margin-inline: 5rem;
+  background-color: variables.$background-alternate-color;
+  color: variables.$alternate-font-color;
   padding: 1rem;
   margin: 2rem;
   border: 0.2rem solid variables.$normal-element-color;
@@ -25,34 +41,68 @@
       grid-template-rows: 1fr 1fr 1fr;
       grid-template-areas:
         ". . a a"
-        "b b . c"
-        "d . e e";
+        "b b c c"
+        "d . e e"
+        "f f f f";
     }
 
     .c-poster__image {
-      grid-area: 1 / 1 / -1 / -1;
+      grid-area: 1 / 1 / -2 / -1;
     }
 
     .c-poster__title--one {
       grid-area: a;
+      border-radius: 0%;
+      font-size: 3rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0;
+      margin: 0;
     }
 
     .c-poster__title--two {
       grid-area: b;
+      border-radius: 0%;
+      font-size: 3rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0;
+      margin: 0;
     }
 
     .c-poster__title--three {
       grid-area: e;
+      border-radius: 0%;
+      font-size: 3rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0;
+      margin: 0;
     }
 
     .c-poster__jornadas {
+      display: initial;
       grid-area: d;
-      background-color: variables.$background-primary-color;
-      color: variables.$alternate-font-color;
+      font-size: 3rem;
+      border-radius: 0%;      
+      display: flex;
+      align-items: center;
     }
 
     .c-poster__enlace {
       grid-area: c;
+      font-size: 2.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .c-poster__descripcion {
+      margin-block: 3rem;
+      grid-area: f;
     }
   }
 }
