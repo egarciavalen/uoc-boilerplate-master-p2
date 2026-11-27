@@ -2,13 +2,13 @@
 
 .c-blogheader {
   display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-columns: 1fr 2fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 0.2fr;
   grid-template-areas:
-    ". . ."
-    ". a ."
-    ". . ."
-    ". b .";
+    ". . . ."
+    ". a a ."
+    ". . . ."
+    ". b b .";
 }
 
 .c-blogheader__image {
@@ -18,10 +18,14 @@
 
 .c-blogheader__title {
   grid-area: a;
-  text-align: center;
 }
 
 .c-blogheader__author {
   text-align: center;
   grid-area: b;
+}
+
+.c-blogheader__author--link {
+  color: variables.$alternate-font-color;
+  font-size: 1.2rem;
 }

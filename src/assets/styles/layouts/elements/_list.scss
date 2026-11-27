@@ -10,12 +10,14 @@ ol {
   // Reinicio para eliminar los números por defecto 
   counter-reset: item;  
   color: variables.$normal-font-color;
-  font-size:1.5rem;
+  font-size:1.1rem;
+  padding-left: 0.5rem;
 
 }
 
-ol li {
-  margin-right: 0.5rem;
+ol > li {
+  margin-right:0.5rem;
+  margin-top: 1rem;
 }
 
 ol > li::before {
