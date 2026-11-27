@@ -1,44 +1,17 @@
-// En el fichero home se hará uso de todo el CSS dividido en capas
+// Organización de las diferentes capas de ITCSS usando @layer
+// Como @use no funciona dentro de un layer, hay que usar meta.load-css
 
-// Settings
-@use 'settings/variables';
+@use "sass:meta";
 
-// Tools
-@use 'tools/mixins';
-@use 'tools/functions';
+@layer vendor, settings, tools, generic, elements, objects, components, utilities;
 
-// Generic
-@use 'generic/reset';
+// Importación de las diferentes capas
 
-// Elements
-@use 'elements/body';
-@use 'elements/main';
-@use 'elements/title';
-@use 'elements/paragraph';
-@use 'elements/link';
-@use 'elements/list';
-@use 'elements/image';
-@use 'elements/form';
-@use 'elements/figure';
-@use 'elements/blockquote';
-@use 'elements/cite';
-@use 'elements/section';
-
-// Object
-@use 'objects/container';
-@use 'objects/flex';
-@use 'objects/svg';
-
-// Component
-@use 'components/footer';
-@use 'components/header';
-@use 'components/logo';
-@use 'components/card';
-@use 'components/bloglist';
-@use 'components/userform';
-@use 'components/poster';
-
-// Utilities
-@use 'utilities/text';
-@use 'utilities/border';
-@use 'utilities/position';
+@layer vendor {@include meta.load-css("vendor/_vendor.scss")}
+@layer settings {@include meta.load-css("settings/_settings.scss")}
+@layer tools {@include meta.load-css("tools/_tools.scss")}
+@layer generic {@include meta.load-css("generic/_generic.scss")}
+@layer elements {@include meta.load-css("elements/_elements.scss")}
+@layer objects {@include meta.load-css("objects/_objects.scss")}
+@layer components {@include meta.load-css("components/_components.scss")}
+@layer utilities {@include meta.load-css("utilities/_utilities.scss")}
