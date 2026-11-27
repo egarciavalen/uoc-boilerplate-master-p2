@@ -5,14 +5,19 @@
   @include mixins.base-flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
-  flex-wrap: initial;
+  flex-direction: row;
+
+  @include mixins.computer() {
+    gap: 4rem;
+  }  
 }
 
 .c-cards__card {
   background-color: variables.$background-primary-color;
   text-align: center;
   margin-top: 1rem;
+
+  max-width: 20rem;
 }
 
 .c-cards__card--body {
