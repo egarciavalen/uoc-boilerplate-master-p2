@@ -1,7 +1,8 @@
 @use "../settings/variables";
+@use "../tools/mixins";
 
 .c-cards {
-  // Flex
+  @include mixins.base-flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
@@ -11,6 +12,7 @@
 .c-cards__card {
   background-color: variables.$background-primary-color;
   text-align: center;
+  margin-top: 1rem;
 }
 
 .c-cards__card--body {

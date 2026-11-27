@@ -1,6 +1,8 @@
 @use "../settings/variables";
+@use "../tools/mixins";
 
 .c-footer {
+  @include mixins.base-flex;
   background-color: variables.$background-primary-color;
   padding-top: 2rem;
 }
@@ -16,9 +18,10 @@
 }
 
 .c-footer__logo {
-  // Flex
+  @include mixins.base-flex;
   align-items: center;
   justify-content: center;
+  gap: 0.2rem;
 }
 
 .c-footer__links {
@@ -29,9 +32,11 @@
 }
 
 .c-footer__social {
-  // Flex
+  @include mixins.base-flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: initial;
+  margin-top: 2rem;
 }
 
 .c-footer__uoc {
@@ -40,7 +45,7 @@
 }
 
 .c-footer__uoc--logo {
-  // Flex
+  @include mixins.base-flex;
   flex-direction: column;  
 }
 

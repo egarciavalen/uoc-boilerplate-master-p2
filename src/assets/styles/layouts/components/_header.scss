@@ -1,6 +1,8 @@
 @use "../settings/variables";
+@use "../tools/mixins";
 
 .c-header {
+  @include mixins.base-flex;
   padding-top: 2rem;
   padding-bottom: 2rem;
   // Flex
@@ -9,7 +11,7 @@
 
 .c-header__logo {
   gap: 0.6rem;
-  // Flex
+  @include mixins.base-flex;
   align-items: center;
   justify-content: center;
 }
