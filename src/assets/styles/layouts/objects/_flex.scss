@@ -1,6 +1,9 @@
 .o-flex {
   display: flex;
-  align-items: flex-start;
+}
+
+.o-flex--column {
+  flex-direction: column;
 }
 
 .o-flex--gap {
@@ -11,30 +14,27 @@
   flex-wrap: wrap;
 }
 
-.o-flex__item {
-  flex: 1;
-}
-
-.o-flex__item--semiexpanded {
+.o-flex--semiexpanded {
   flex: 2;
 }
 
-.o-flex__item--expanded {
+.o-flex--expanded {
   flex: 3;
 }
 
-.o-flex__item--start {
+.o-flex--start {
   justify-content: start;
 }
 
-.o-flex__item--center {
+.o-flex--center {
+  align-items: center;
   justify-content: center;
 }
 
-.o-flex__item--space {
+.o-flex--space {
   justify-content: space-between;
 }
 
-.o-flex__item--end {
+.o-flex--end {
   justify-content: end;
 }
