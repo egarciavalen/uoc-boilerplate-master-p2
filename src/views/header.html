@@ -1,31 +1,29 @@
-<header class="c-header">
+<header>
 
-  <div class="o-flex o-container">
+  <div class="o-flex o-container c-header">
 
     <!-- Logo del municipio -->
-    <div class="o-flex o-flex--start">
+    <div class="o-flex c-header__logo">
       <include src="./views/logo.html"></include>
     </div>
 
     <!-- Menú de navegación -->
     <!-- COMPONENTE BOOTSTRAP: uso de navbar -->
-    <nav class="navbar navbar-expand-lg" data-bs-theme="dark">
-      <div class="container-fluid">
+    <nav class="c-header__nav navbar navbar-expand-lg" data-bs-theme="dark">
         <!-- Para poder desplegar los elementos -->
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="c-header__nav--gap navbar-nav me-auto mb-2 mb-lg-0">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <!-- No uso nav-link porque me sobreescribe los estilos que tengo definidos para <a> -->
-            <li class="nav-item "><a class="u-text__color--alternate" href="./index.html" title="Inicio de las jornadas">Inicio</a></li>
+            <li class="c-header__nav--first nav-item "><a class="u-text__color--alternate" href="./index.html" title="Inicio de las jornadas">Inicio</a></li>
             <li class="nav-item"><a class="u-text__color--alternate" href="./speakers.html" title="Participantes de las jornadas">Participantes</a></li>
             <li class="nav-item"><a class="u-text__color--alternate" href="./blog.html" title="Blog con información de las jornadas">Blog</a></li>
             <li class="nav-item"><a class="u-text__color--alternate" href="./form.html" title="Formulario de las jornadas">Formulario</a></li>
           </ul>
         </div>
-      </div>
     </nav> 
   </div>
 

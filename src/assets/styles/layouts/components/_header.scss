@@ -1,15 +1,26 @@
 @use "../settings/variables";
 
 .c-header {
-  background-color: variables.$background-primary-color;
   padding-top: 2rem;
   padding-bottom: 2rem;
+
+  // Flex
+  flex-direction: column;
+}
+
+.c-header__logo {
+  gap: 0.6rem;
+  align-items: center;
+  justify-content: center;
 }
 
 .c-header__nav {
+  align-items: center;
+  justify-content: center;
   padding-bottom: 1rem;
+  text-align: center;
 }
 
-.c-header__nav--gap {
-  gap: 2rem;
+.c-header__nav--first {
+  margin-top: 2rem;
 }

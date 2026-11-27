@@ -1,0 +1,5 @@
+@use "../settings/variables";
+
+header {
+  background-color: variables.$background-primary-color;
+}
