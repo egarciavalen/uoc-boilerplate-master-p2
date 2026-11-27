@@ -4,3 +4,27 @@
   flex-direction: row;
   gap: 1rem;
 }
+
+// Containers
+
+
+@mixin not-mobile {
+  @container (width > 25rem) {
+    // Aplicación de contenido
+    @content;
+  }
+}
+
+@mixin tablet {
+  @container (width > 25rem) and (width < 60rem) {
+    // Aplicación de contenido
+    @content;
+  }
+}
+
+@mixin computer {
+  @container (width > 60rem) {
+    // Aplicación de contenido
+    @content;
+  }
+}

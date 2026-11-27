@@ -5,6 +5,10 @@
   @include mixins.base-flex;
   background-color: variables.$background-primary-color;
   padding-top: 2rem;
+
+  @include mixins.not-mobile() {
+    flex-direction: column;  
+  }
 }
 
 .c-footer__contact {
@@ -13,8 +17,12 @@
 
 .c-footer__webinfo {
   padding-top: 1rem;
+
   // Flex
-  flex-direction: column;
+
+  @include mixins.not-mobile() {
+    flex-direction: row;  
+  }
 }
 
 .c-footer__logo {
@@ -41,14 +49,32 @@
 
 .c-footer__uoc {
   background-color: variables.$background-alternate-color;
-  padding-block: 2rem;
+  padding-block: 1rem;
 }
 
 .c-footer__uoc--logo {
   @include mixins.base-flex;
-  flex-direction: column;  
+
+  flex-direction: column;
+  align-items: center;
+
+  @include mixins.computer() {
+    flex-direction: row;
+    gap: 5rem;
+    flex-wrap: initial;
+  }
 }
 
 .c-footer__uoc--text {
-  padding-top: 2rem;
+
+  @include mixins.computer() {
+    margin-bottom: 2rem;
+    text-align: left;
+  }
+}
+
+.c-footer__uoc--img {
+  @include mixins.not-mobile() {
+    max-width: 20rem;  
+  } 
 }
