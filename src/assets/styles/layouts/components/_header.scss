@@ -7,6 +7,12 @@
   padding-bottom: 2rem;
   // Flex
   flex-direction: column;
+
+  @include mixins.computer() {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+ 
 }
 
 .c-header__logo {
@@ -22,8 +28,23 @@
   // Flex
   align-items: center;
   justify-content: center;
+
+  @include mixins.computer() {
+    gap: rem;
+  }
 }
 
+.c-header__nav--items {
+
+   @include mixins.computer() {
+    margin-top: 2rem;
+    gap: 3rem;
+  } 
+}
 .c-header__nav--first {
   margin-top: 2rem;
+
+  @include mixins.computer() {
+    margin-top: initial;
+  }
 }
