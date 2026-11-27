@@ -5,5 +5,11 @@
 }
 
 .o-container--reduced {
+  max-width: 80%;
+}
+
+/** Activar en formato ordenador-tablet
+.o-container--reduced {
   max-width: 60%;
 }
+**/
