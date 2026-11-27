@@ -1,4 +1,5 @@
 @use "../settings/variables";
+@use "../tools/mixins";
 
 
 .c-poster__jornadas {
@@ -31,19 +32,18 @@
   text-decoration: none;
 }
 
-
 @supports (display: grid) {
-  @media (min-width: 42rem) and (min-height: 27rem) {
+  @include mixins.computer() {
 
     .c-poster {
       display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
       grid-template-rows: 1fr 1fr 1fr;
       grid-template-areas:
-        ". . a a"
-        "b b c c"
-        "d . e e"
-        "f f f f";
+        ". . . a a a"
+        "b b b c c c"
+        "d d . e e e"
+        ". f f f f .";
     }
 
     .c-poster__image {
@@ -103,6 +103,7 @@
     .c-poster__descripcion {
       margin-block: 3rem;
       grid-area: f;
+
     }
   }
 }
