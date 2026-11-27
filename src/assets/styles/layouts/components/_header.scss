@@ -3,22 +3,23 @@
 .c-header {
   padding-top: 2rem;
   padding-bottom: 2rem;
-
   // Flex
   flex-direction: column;
 }
 
 .c-header__logo {
   gap: 0.6rem;
+  // Flex
   align-items: center;
   justify-content: center;
 }
 
 .c-header__nav {
-  align-items: center;
-  justify-content: center;
   padding-bottom: 1rem;
   text-align: center;
+  // Flex
+  align-items: center;
+  justify-content: center;
 }
 
 .c-header__nav--first {

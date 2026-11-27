@@ -1,28 +1,33 @@
 @use "../settings/variables";
 
-.c-card {
-  background-color: variables.$background-primary-color;
-  text-align: center;
-  min-width: 20rem;
-  max-width: 20rem;
+.c-cards {
+  // Flex
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: initial;
 }
 
-.c-card__body {
+.c-cards__card {
+  background-color: variables.$background-primary-color;
+  text-align: center;
+}
+
+.c-cards__card--body {
   background-color: variables.$background-tertiary-color;
   border: 0.3rem solid variables.$background-primary-color;
 }
 
-.c-card__title {
+.c-cards__card--title {
   font-size: 2rem;
   font-weight: bold;
 }
 
-.c-card__text {
+.c-cards__card--text {
   font-size: 1.3rem;
 }
 
-.c-card__img {
+.c-cards__card--img {
   padding: 0.5rem;
   max-height: 30rem;
-  background-color: variables.$background-primary-color;
 }

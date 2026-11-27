@@ -4,37 +4,3 @@
   flex-direction: row;
   gap: 1rem;
 }
-
-
-.o-flex--gap {
-  gap: 2rem;
-}
-
-.o-flex--wrap {
-  flex-wrap: wrap;
-}
-
-.o-flex--semiexpanded {
-  flex: 2;
-}
-
-.o-flex--expanded {
-  flex: 3;
-}
-
-.o-flex--start {
-  justify-content: start;
-}
-
-.o-flex--center {
-  align-items: center;
-  justify-content: center;
-}
-
-.o-flex--space {
-  justify-content: space-between;
-}
-
-.o-flex--end {
-  justify-content: end;
-}
