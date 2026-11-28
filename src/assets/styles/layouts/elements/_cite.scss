@@ -5,6 +5,7 @@ q {
   font-size: variables.$q-mobile-size;
   font-weight: bold;
   font-style: italic;
+  margin-top: 1rem;
 
   @include mixins.tablet() {
     font-size: variables.$q-tablet-size;

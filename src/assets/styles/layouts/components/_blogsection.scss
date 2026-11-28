@@ -1,6 +1,0 @@
-@use "../settings/variables";
-@use "../tools/mixins";
-
-.c-blogsection {
-  @include mixins.base-flex;
-}
