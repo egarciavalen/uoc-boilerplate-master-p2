@@ -1,7 +1,16 @@
 @use "../settings/variables";
+@use "../tools/mixins";
 
 q {
-  font-size: 1.3rem;
+  font-size: variables.$q-mobile-size;
   font-weight: bold;
   font-style: italic;
+
+  @include mixins.tablet() {
+    font-size: variables.$q-tablet-size;
+  }
+
+  @include mixins.computer() {
+    font-size: variables.$q-computer-size;
+  }
 }

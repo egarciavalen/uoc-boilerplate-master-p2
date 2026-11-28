@@ -1,4 +1,5 @@
 @use "../settings/variables";
+@use "../tools/mixins";
 
 ul {
   list-style: none;
@@ -10,9 +11,16 @@ ol {
   // Reinicio para eliminar los números por defecto 
   counter-reset: item;  
   color: variables.$normal-font-color;
-  font-size:1.1rem;
+  font-size: variables.$ol-mobile-size;
   padding-left: 0.5rem;
 
+  @include mixins.tablet() {
+    font-size: variables.$ol-tablet-size;
+  }
+
+  @include mixins.computer() {
+    font-size: variables.$ol-computer-size;
+  }
 }
 
 ol > li {

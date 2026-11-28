@@ -1,7 +1,16 @@
 @use "../settings/variables";
+@use "../tools/mixins";
 
 p {
-  font-size: 1.4rem;
+  font-size: variables.$p-mobile-size;
   color: variables.$normal-font-color;
   margin-block: 1.5rem;
+
+  @include mixins.tablet() {
+    font-size: variables.$p-tablet-size;
+  }
+
+  @include mixins.computer() {
+    font-size: variables.$p-computer-size;
+  }
 }

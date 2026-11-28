@@ -1,9 +1,18 @@
 @use "../settings/variables";
+@use "../tools/mixins";
 
 a {
   padding: 0.1rem;
-  font-size: 1.3rem;
+  font-size: variables.$a-mobile-size;
   color: variables.$normal-font-color;
+
+  @include mixins.tablet() {
+    font-size: variables.$a-tablet-size;
+  }
+
+  @include mixins.computer() {
+    font-size: variables.$a-computer-size;
+  }
 }
 
 a:hover {

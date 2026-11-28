@@ -1,7 +1,16 @@
 @use "../settings/variables";
+@use "../tools/mixins";
 
 figcaption {
-  text-align: center;
+  text-align: variables.$figcaption-mobile-size;
   font-size: 1.3rem;
   color: variables.$normal-font-color;
+
+  @include mixins.tablet() {
+    font-size: variables.$figcaption-tablet-size;
+  }
+
+  @include mixins.computer() {
+    font-size: variables.$figcaption-computer-size;
+  }
 }

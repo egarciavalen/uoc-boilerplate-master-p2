@@ -1,10 +1,19 @@
 @use "../settings/variables";
+@use "../tools/mixins";
 
 form {
   padding: 1.5rem;
 }
 
 label {
-  font-size: 1.1rem;
-  font-weight: bold;  
+  font-size: variables.$label-mobile-size;
+  font-weight: bold; 
+  
+  @include mixins.tablet() {
+    font-size: variables.$label-tablet-size;
+  }
+
+  @include mixins.computer() {
+    font-size: variables.$label-computer-size;
+  }
 }

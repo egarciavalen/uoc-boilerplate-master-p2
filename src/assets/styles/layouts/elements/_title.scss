@@ -1,8 +1,18 @@
 @use "../settings/variables";
+@use "../tools/mixins";
 
 h1 {
   display: inline-block;
   margin-block: 1rem;
   font-weight: bold;
-  font-size: 1.3rem;
+  font-size: variables.$h1-mobile-size;
+
+  @include mixins.tablet() {
+    font-size: variables.$h1-tablet-size;
+  }
+
+  @include mixins.computer() {
+    font-size: variables.$h1-computer-size;
+  }
 }
+

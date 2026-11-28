@@ -1,7 +1,16 @@
 @use "../settings/variables";
+@use "../tools/mixins";
 
 blockquote {
-  font-size: 2rem;
+  font-size: variables.$blockquoute-mobile-size;
   font-weight: bold;
   font-style: italic;
+
+  @include mixins.tablet() {
+    font-size: variables.$blockquoute-tablet-size;
+  }
+
+  @include mixins.computer() {
+    font-size: variables.$blockquoute-computer-size;
+  }
 }
