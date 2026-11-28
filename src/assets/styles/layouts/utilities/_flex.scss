@@ -1,0 +1,8 @@
+@use "../settings/variables";
+@use "../tools/mixins";
+
+.u-flexalign {
+  @include mixins.base-flex;
+  align-items: center;
+  justify-content: center;
+}

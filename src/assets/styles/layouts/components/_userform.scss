@@ -6,6 +6,26 @@
   background-color: variables.$form-background-color;
   border: 0.3rem solid variables.$background-primary-color;
   border-radius: 5%;
+
+  height: variables.$form-height-mobile-size;
+  width: variables.$form-width-mobile-size;
+  
+  @include mixins.tablet() {
+    height: variables.$form-height-tablet-size;
+    width: variables.$form-width-tablet-size;
+  }
+
+  @include mixins.computer() {
+    height: variables.$form-height-computer-size;
+    width: variables.$form-width-computer-size;
+  }
+
+  // Caso especial
+  @container (width < 14.5rem) {
+    height: variables.$form-height-minimum-size;
+    width: variables.$form-width-minimum-size;
+
+  }
 }
 
 .c-userform__help {
@@ -24,7 +44,9 @@
 
 .c-userform__button {
 
-  margin-block: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  padding-inline: 2rem;
   font-size: variables.$c-userform__button-mobile-size;
   
   @include mixins.tablet() {
@@ -41,4 +63,21 @@
   border-radius: 10%;
   margin-bottom: 1rem;
   background-color: variables.$c-userform__label-background-color;
+}
+
+
+.c-userform__input {
+
+  height: variables.$input-height-mobile-size;
+  width: variables.$input-width-mobile-size;
+  
+  @include mixins.tablet() {
+    height: variables.$input-height-tablet-size;
+    width: variables.$input-width-tablet-size;
+  }
+
+  @include mixins.computer() {
+    height: variables.$input-height-computer-size;
+    width: variables.$input-width-computer-size;
+  }
 }

@@ -41,45 +41,49 @@
         <p>No lo pienses más, ¡inscríbete!</p>
       </div>
 
-      <form class="o-container o-container--reduced c-userform" method="POST" data-netlify="true">
-        
-        <!-- Nombre -->
-        <div class="mb-3">
-          <label class="c-userform__label form-label" for="nombre">Nombre</label>
-          <input class="form-control" id="nombre" type="text" placeholder="Nombre">
-        </div>
+      <div class="u-flexalign">
 
-        <!-- Primer apellido -->
-        <div class="mb-3">
-          <label class="c-userform__label form-label" for="primerApellido">Primer apellido</label>
-          <input class="form-control" id="primerApellido" type="text" placeholder="Primer apellido">
-        </div>
+        <form class="c-userform" method="POST" data-netlify="true">
+          
+          <!-- Nombre -->
+          <div class="mb-3">
+            <label class="c-userform__label form-label" for="nombre">Nombre</label>
+            <input class="c-userform__input form-control" id="nombre" type="text" placeholder="Nombre">
+          </div>
 
-        <!-- Segundo apellido -->
-        <div class="mb-3">
-          <label class="c-userform__label form-label" for="segundoApellido">Segundo apellido</label>
-          <input class="form-control" id="segundoApellido" type="text" placeholder="Segundo apellido">
-        </div>
+          <!-- Primer apellido -->
+          <div class="mb-3">
+            <label class="c-userform__label form-label" for="primerApellido">Primer apellido</label>
+            <input class="c-userform__input form-control" id="primerApellido" type="text" placeholder="Primer apellido">
+          </div>
 
-        <!-- Correo electrónico -->
-        <div class="mb-3">
-          <label class="c-userform__label form-label" for="correoElectronico">Correo electrónico</label>
-          <input class="form-control" id="correoElectronico" type="email" placeholder="correo@gmail.com" aria-describedby="correoElectronicoHelp">
-          <div class="c-userform__help form-text" id="correoElectronicoHelp">Recibirá una notificación en su correo electrónico con más detalles para participar.</div>
-        </div>
+          <!-- Segundo apellido -->
+          <div class="mb-3">
+            <label class="c-userform__label form-label" for="segundoApellido">Segundo apellido</label>
+            <input class="c-userform__input form-control" id="segundoApellido" type="text" placeholder="Segundo apellido">
+          </div>
 
-        <!-- Motivo de la participación -->
-        <div class="mb-3">
-          <label class="c-userform__label form-label" for="motivo">Motivo de la participación</label>
-          <input class="form-control" id="motivo" type="text" placeholder="Motivo" aria-describedby="motivoHelp">
-          <div class="c-userform__help form-text" id="motivoHelp">Indique en mayor detalle los motivos por los que está interesado en participar.</div>
-        </div>
+          <!-- Correo electrónico -->
+          <div class="mb-3">
+            <label class="c-userform__label form-label" for="correoElectronico">Correo electrónico</label>
+            <input class="c-userform__input form-control" id="correoElectronico" type="email" placeholder="abc@gmail.com" aria-describedby="correoElectronicoHelp">
+            <div class="c-userform__help form-text" id="correoElectronicoHelp">Recibirá una notificación en su correo electrónico con más detalles para participar.</div>
+          </div>
 
-        <!-- Envío del formulario -->
-        <div class="text-center">
-          <button class="c-userform__button btn btn-primary" type="submit">Enviar formulario</button>
-        </div>
-      </form>
+          <!-- Motivo de la participación -->
+          <div class="mb-3">
+            <label class="c-userform__label form-label" for="motivo">Motivo de la participación</label>
+            <input class="c-userform__input form-control" id="motivo" type="text" placeholder="Motivo" aria-describedby="motivoHelp">
+            <div class="c-userform__help form-text" id="motivoHelp">Indique los motivos de participación.</div>
+          </div>
+
+          <!-- Envío del formulario -->
+          <div class="text-center">
+            <button class="c-userform__button btn btn-primary" type="submit">Enviar</button>
+          </div>
+        </form>
+  
+      </div>
 
     </main>
 

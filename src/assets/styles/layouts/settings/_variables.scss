@@ -22,7 +22,7 @@ $alternate-font-color: #FFFF;
 $normal-element-color: #000;
 $alternate-element-color: #FFFF;
 
-// Tamaños
+// Tamaños (unidades rem)
 $p-mobile-size: 1.5rem;
 $p-tablet-size: 1.7rem;
 $p-computer-size: 1.8rem;
@@ -51,9 +51,9 @@ $figcaption-mobile-size: 1.3rem;
 $figcaption-tablet-size: 1.5rem;
 $figcaption-computer-size: 1.7rem;
 
-$label-mobile-size: 1.1rem;
-$label-tablet-size: 1.3rem;
-$label-computer-size: 1.5rem;
+$label-mobile-size: 1.0rem;
+$label-tablet-size: 1.1rem;
+$label-computer-size: 1.4rem;
 
 $c-blog__header--link-mobile-size: 1.3rem;
 $c-blog__header--link-tablet-size: 1.5rem;
@@ -73,14 +73,40 @@ $c-cards__card--text-computer-size: 1.7rem;
 
 $gap-cards: 4rem;
 
-$input-mobile-size: 1.1rem;
-$input-tablet-size: 1.3rem;
-$input-computer-size: 1.5rem;
+$input-mobile-size: 1.0rem;
+$input-tablet-size: 1.1rem;
+$input-computer-size: 1.4rem;
 
-$c-userform__help-mobile-size: 1.1rem;
-$c-userform__help-tablet-size: 1.3rem;
-$c-userform__help-computer-size: 1.5rem;
+$c-userform__help-mobile-size: 1.0rem;
+$c-userform__help-tablet-size: 1.1rem;
+$c-userform__help-computer-size: 1.4rem;
 
-$c-userform__button-mobile-size: 1.1rem;
-$c-userform__button-tablet-size: 1.3rem;
-$c-userform__button-computer-size: 1.5rem;
+$c-userform__button-mobile-size: 1.0rem;
+$c-userform__button-tablet-size: 1.1rem;
+$c-userform__button-computer-size: 1.4rem;
+
+// Tamaños (unidades lv)
+
+$input-height-mobile-size: 4lvh;
+$input-width-mobile-size: 55lvw;
+
+$input-height-tablet-size: 4lvh;
+$input-width-tablet-size: 50lvw;
+
+$input-height-computer-size: 4lvh;
+$input-width-computer-size: 55lvw;
+
+
+// Tamaños (unidades cq)
+
+$form-height-mobile-size: 92lvh;
+$form-width-mobile-size: 90cqw;
+
+$form-height-tablet-size: 90cqh;
+$form-width-tablet-size: 70cqw;
+
+$form-height-computer-size: 88cqh;
+$form-width-computer-size: 60cqw;
+
+$form-height-minimum-size: 105cqh; // Caso especial para pantallas muy pequeñas
+$form-width-minimum-size: 90cqw;
