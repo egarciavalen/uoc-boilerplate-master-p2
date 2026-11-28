@@ -17,3 +17,15 @@ label {
     font-size: variables.$label-computer-size;
   }
 }
+
+input {
+  font-size: variables.$input-mobile-size;
+  
+  @include mixins.tablet() {
+    font-size: variables.$input-tablet-size;
+  }
+
+  @include mixins.computer() {
+    font-size: variables.$input-computer-size;
+  }
+}

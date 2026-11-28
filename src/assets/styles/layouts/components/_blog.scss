@@ -30,14 +30,14 @@
 
 .c-blog__header--link {
   color: variables.$alternate-font-color;
-  font-size: variables.$blog__header--link-mobile-size;
+  font-size: variables.$c-blog__header--link-mobile-size;
 
   @include mixins.tablet() {
-    font-size: variables.$blog__header--link-tablet-size;
+    font-size: variables.$c-blog__header--link-tablet-size;
   }
 
   @include mixins.computer() {
-    font-size: variables.$blog__header--link-computer-size;
+    font-size: variables.$c-blog__header--link-computer-size;
   }
 }
 

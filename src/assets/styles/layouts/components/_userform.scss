@@ -1,4 +1,5 @@
 @use "../settings/variables";
+@use "../tools/mixins";
 
 .c-userform {
   margin-top: 1rem;
@@ -7,3 +8,30 @@
   border-radius: 5%;
 }
 
+.c-userform__help {
+
+  font-size: variables.$c-userform__help-mobile-size;
+  
+  @include mixins.tablet() {
+    font-size: variables.$c-userform__help-tablet-size;
+  }
+
+  @include mixins.computer() {
+    font-size: variables.$c-userform__help-computer-size;
+  }
+
+}
+
+.c-userform__button {
+
+  margin-block: 1rem;
+  font-size: variables.$c-userform__button-mobile-size;
+  
+  @include mixins.tablet() {
+    font-size: variables.$c-userform__button-tablet-size;
+  }
+
+  @include mixins.computer() {
+    font-size: variables.$c-userform__button-computer-size;
+  }
+}

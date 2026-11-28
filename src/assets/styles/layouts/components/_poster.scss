@@ -27,7 +27,6 @@
   color: variables.$alternate-font-color;
   padding: 1rem;
   margin: 2rem;
-  border: 0.2rem solid variables.$normal-element-color;
   font-weight: bold; 
   text-decoration: none;
 }
@@ -103,7 +102,6 @@
     .c-poster__descripcion {
       margin-block: 3rem;
       grid-area: f;
-
     }
   }
 }
