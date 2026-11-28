@@ -8,7 +8,7 @@
   flex-direction: row;
 
   @include mixins.computer() {
-    gap: 4rem;
+    gap: variables.$gap-cards;
   }  
 }
 
@@ -16,22 +16,39 @@
   background-color: variables.$background-primary-color;
   text-align: center;
   margin-top: 1rem;
-
   max-width: 20rem;
 }
 
 .c-cards__card--body {
   background-color: variables.$background-tertiary-color;
   border: 0.3rem solid variables.$background-primary-color;
+  padding: 1rem;
 }
 
 .c-cards__card--title {
-  font-size: 2rem;
   font-weight: bold;
+
+  font-size: variables.$c-cards__card--title-mobile-size;
+  
+  @include mixins.tablet() {
+    font-size: variables.$c-cards__card--title-tablet-size;
+  }
+
+  @include mixins.computer() {
+    font-size: variables.$c-cards__card--title-computer-size;
+  }
 }
 
 .c-cards__card--text {
-  font-size: 1.3rem;
+  font-size: variables.$c-cards__card--text-mobile-size;
+  
+  @include mixins.tablet() {
+    font-size: variables.$c-cards__card--text-tablet-size;
+  }
+
+  @include mixins.computer() {
+    font-size: variables.$c-cards__card--text-computer-size;
+  }
 }
 
 .c-cards__card--img {
