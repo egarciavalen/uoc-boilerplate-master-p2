@@ -70,8 +70,18 @@
 
 // SECTION
 
-.c-blog__section {
+.c-blog__section--flex {
   @include mixins.base-flex;
+}
+
+// Uso de :is
+.c-blog__section > :is(blockquote, q) {
+  margin-bottom: 3rem;
+}
+
+// Uso de :where
+.c-blog__section > :where(blockquote, q) {
+  margin-top: 4rem;
 }
 
 
