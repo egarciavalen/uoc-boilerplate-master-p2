@@ -3,7 +3,7 @@
 
 .c-userform {
   margin-top: 1rem;
-  background-color: variables.$background-tertiary-color;
+  background-color: variables.$form-background-color;
   border: 0.3rem solid variables.$background-primary-color;
   border-radius: 5%;
 }
@@ -34,4 +34,11 @@
   @include mixins.computer() {
     font-size: variables.$c-userform__button-computer-size;
   }
+}
+
+.c-userform__label {
+  padding: 0.2rem;
+  border-radius: 10%;
+  margin-bottom: 1rem;
+  background-color: variables.$c-userform__label-background-color;
 }

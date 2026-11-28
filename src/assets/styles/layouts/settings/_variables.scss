@@ -8,7 +8,11 @@ $background-primary-color: #4C212A;
 $background-secondary-color: #7EA172;
 $background-tertiary-color: #C7CB85;
 $background-alternate-color: #000078;
-$form-background-color: #063a09;
+
+$form-background-color: oklch(0.9029 0.0814 146.12); // USO DE NUEVOS COLORES
+$form-button-background-color: #0a5f0e;
+
+$c-userform__label-background-color: oklab(75.387% -0.08928 0.03026);
 
 // Color de letra
 $normal-font-color: #000;
