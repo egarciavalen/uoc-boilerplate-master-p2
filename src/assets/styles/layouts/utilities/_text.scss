@@ -1,12 +1,16 @@
 @use "../settings/variables";
 
 .u-text {
-  @at-root #{&}__color--alternate {
-    color: variables.$alternate-font-color;
+  @at-root #{&}__color {
+    @at-root #{&}--alternate {
+      color: variables.$alternate-font-color;
+    }
   }
 
-  @at-root #{&}__fill--alternate {
-    fill: variables.$alternate-element-color;
+  @at-root #{&}__fill {
+    @at-root #{&}--alternate {
+      fill: variables.$alternate-element-color;
+    }
   }
 
   @at-root #{&}__background {

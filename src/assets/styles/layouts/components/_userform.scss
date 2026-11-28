@@ -26,58 +26,57 @@
     width: variables.$form-width-minimum-size;
     height: variables.$form-height-minimum-size;
   }
-}
 
-.c-userform__help {
+  // *** HELP ***
+  @at-root #{&}__help {
+    font-size: variables.$c-userform__help-mobile-size;
+    
+    @include mixins.tablet() {
+      font-size: variables.$c-userform__help-tablet-size;
+    }
 
-  font-size: variables.$c-userform__help-mobile-size;
-  
-  @include mixins.tablet() {
-    font-size: variables.$c-userform__help-tablet-size;
+    @include mixins.computer() {
+      font-size: variables.$c-userform__help-computer-size;
+    }
   }
 
-  @include mixins.computer() {
-    font-size: variables.$c-userform__help-computer-size;
+  // *** BUTTON ***
+  @at-root #{&}__button {
+    padding-inline: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-size: variables.$c-userform__button-mobile-size;
+    
+    @include mixins.tablet() {
+      font-size: variables.$c-userform__button-tablet-size;
+    }
+
+    @include mixins.computer() {
+      font-size: variables.$c-userform__button-computer-size;
+    }
   }
 
-}
-
-.c-userform__button {
-
-  padding-inline: 2rem;
-  margin-top: 2rem;
-  margin-bottom: 1rem;
-  font-size: variables.$c-userform__button-mobile-size;
-  
-  @include mixins.tablet() {
-    font-size: variables.$c-userform__button-tablet-size;
+  // *** LABEL ***
+  @at-root #{&}__label {
+    padding: 0.2rem;
+    margin-bottom: functions.addSubstractHalf(0.5, "add");
+    background-color: variables.$c-userform__label-background-color;
+    border-radius: functions.percentageOf(10);
   }
 
-  @include mixins.computer() {
-    font-size: variables.$c-userform__button-computer-size;
-  }
-}
+  // *** INPUT ***
+  @at-root #{&}__input {
+    width: variables.$input-width-mobile-size;
+    height: variables.$input-height-mobile-size;
+    
+    @include mixins.tablet() {
+      width: variables.$input-width-tablet-size;
+      height: variables.$input-height-tablet-size;
+    }
 
-.c-userform__label {
-  padding: 0.2rem;
-  margin-bottom: functions.addSubstractHalf(0.5, "add");
-  background-color: variables.$c-userform__label-background-color;
-  border-radius: functions.percentageOf(10);
-}
-
-
-.c-userform__input {
-
-  width: variables.$input-width-mobile-size;
-  height: variables.$input-height-mobile-size;
-  
-  @include mixins.tablet() {
-    width: variables.$input-width-tablet-size;
-    height: variables.$input-height-tablet-size;
-  }
-
-  @include mixins.computer() {
-    width: variables.$input-width-computer-size;
-    height: variables.$input-height-computer-size;
+    @include mixins.computer() {
+      width: variables.$input-width-computer-size;
+      height: variables.$input-height-computer-size;
+    }
   }
 }

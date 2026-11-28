@@ -2,37 +2,47 @@
 @use "../tools/mixins";
 @use "../tools/functions";
 
-.c-poster__jornadas {
-  display: inline-block;
-  margin: 2rem;
-  border-radius: functions.percentageOf(10);
+
+.c-poster {
+
+  // *** JORNADAS ***
+  @at-root #{&}__jornadas {
+    display: inline-block;
+    margin: 2rem;
+    border-radius: functions.percentageOf(10);
+  }
+
+  // *** TITLE ***
+  @at-root #{&}__title {
+    @at-root #{&}--one {
+      border-radius: functions.percentageOf(10);
+    }
+
+    @at-root #{&}--two {
+      border-radius: functions.percentageOf(10);
+    }
+
+    @at-root #{&}--three {
+      border-radius: functions.percentageOf(10);
+    }
+  }  
+
+  // *** ENLACE ***
+  @at-root #{&}__enlace {
+    display: block;
+    padding: 1rem;
+    margin-inline: 3rem;
+    font-weight: bold; 
+    color: variables.$alternate-font-color;
+    text-decoration: none;
+    background-color: variables.$background-alternate-color;
+  } 
 }
 
-.c-poster__title--one {
-  border-radius: functions.percentageOf(10);
-}
-
-.c-poster__title--two {
-  border-radius: functions.percentageOf(10);
-}
-
-.c-poster__title--three {
-  border-radius: functions.percentageOf(10);
-}
-
-.c-poster__enlace {
-  display: block;
-  padding: 1rem;
-  margin-inline: 5rem;
-  font-weight: bold; 
-  color: variables.$alternate-font-color;
-  text-decoration: none;
-  background-color: variables.$background-alternate-color;
-}
 
 @supports (display: grid) {
-  @include mixins.computer() {
 
+  @include mixins.computer() {
     .c-poster {
       display: grid;
       grid-template-areas:
@@ -48,41 +58,30 @@
       grid-area: 1 / 1 / -2 / -1;
     }
 
-    .c-poster__title--one {
-      display: flex;
-      grid-area: a;
+    .c-poster__title--one, .c-poster__title--two, .c-poster__title--three {
+      @include mixins.base-flex;
       align-items: center;
       justify-content: center;
       padding: 0;
       margin: 0;
       font-size: functions.addSubstractHalf(2.5, "add");
       border-radius: functions.percentageOf(0);
+    }
+
+    .c-poster__title--one {
+      grid-area: a;
     }
 
     .c-poster__title--two {
-      display: flex;
       grid-area: b;
-      align-items: center;
-      justify-content: center;
-      padding: 0;
-      margin: 0;
-      font-size: functions.addSubstractHalf(2.5, "add");
-      border-radius: functions.percentageOf(0);
     }
 
     .c-poster__title--three {
-      display: flex;
       grid-area: e;
-      align-items: center;
-      justify-content: center;
-      padding: 0;
-      margin: 0;
-      font-size: functions.addSubstractHalf(2.5, "add");
-      border-radius: functions.percentageOf(0);
     }
 
     .c-poster__jornadas {
-      display: flex;
+      @include mixins.base-flex;
       grid-area: d;
       align-items: center;
       font-size: functions.addSubstractHalf(2.5, "add");
@@ -90,7 +89,7 @@
     }
 
     .c-poster__enlace {
-      display: flex;
+      @include mixins.base-flex;
       grid-area: c;
       align-items: center;
       justify-content: center;

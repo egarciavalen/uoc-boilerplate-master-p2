@@ -2,16 +2,95 @@
 @use "../tools/mixins";
 @use "../tools/functions";
 
-.c-blog__header {
-  display: grid;
-  grid-template-areas:
-    ". . . ."
-    ". a a ."
-    ". . . ."
-    ". . . .";
-  grid-template-rows: 1fr 1fr 1fr 0.2fr;
-  grid-template-columns: 1fr 2fr 1fr 1fr;
+.c-blog {
+
+  // *** HEADER ***
+  @at-root #{&}__header {
+    display: grid;
+    grid-template-areas:
+      ". . . ."
+      ". a a ."
+      ". . . ."
+      ". . . .";
+    grid-template-rows: 1fr 1fr 1fr 0.2fr;
+    grid-template-columns: 1fr 2fr 1fr 1fr;   
+
+    // *** HEADER IMAGE ***
+    @at-root #{&}--image {
+      grid-area: 1 / 1 / -2 / -1;
+      object-fit: cover;
+    }
+
+    // *** HEADER TITLE ***
+    @at-root #{&}--title {
+      grid-area: a;
+    }
+
+    // *** HEADER AUTHOR ***
+    @at-root #{&}--author {
+      grid-area: b;
+      text-align: center;
+    }
+
+    // *** HEADER LINK ***
+    @at-root #{&}--link {
+      font-size: variables.$c-blog__header--link-mobile-size;
+      color: variables.$alternate-font-color;
+
+      @include mixins.tablet() {
+        font-size: variables.$c-blog__header--link-tablet-size;
+      }
+
+      @include mixins.computer() {
+        font-size: variables.$c-blog__header--link-computer-size;
+      }
+    }
+  }
+
+  // *** LIST ***
+  @at-root #{&}__list {
+    padding-bottom: 1rem;
+    background-color: variables.$background-tertiary-color;
+    border: 0.3rem solid variables.$background-primary-color;
+    border-radius: functions.percentageOf(5);
+
+    // *** LIST UL ***
+    @at-root #{&}--ul {
+      margin-top: 1rem;
+    }
+  }
+
+  // *** SECTION ***
+  @at-root #{&}__section {
+    // *** SECTION FLEX ***
+    @at-root #{&}--flex {
+      @include mixins.base-flex;
+    }
+  }
+  
+  // *** FIGURE ***
+  @at-root #{&}__figure {
+    @include mixins.base-flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    // *** FIGURE IMAGE ***
+    @at-root #{&}--image {
+      max-width: variables.$c-blog__figure--image-mobile-size;
+
+      @include mixins.tablet() {
+        max-width: variables.$c-blog__figure--image-tablet-size;
+      }
+
+      @include mixins.computer() {
+        max-width: variables.$c-blog__figure--image-computer-size;
+      }
+    }
+  }
 }
+
 
 // Uso de :has()
 .c-blog__header:has(.c-blog__header--author) {
@@ -22,58 +101,11 @@
     ". b b .";
 }
 
-// HEADER
-
-.c-blog__header--image {
-  grid-area: 1 / 1 / -2 / -1;
-  object-fit: cover;
-}
-
-.c-blog__header--title {
-  grid-area: a;
-}
-
-.c-blog__header--author {
-  grid-area: b;
-  text-align: center;
-}
-
-.c-blog__header--link {
-  font-size: variables.$c-blog__header--link-mobile-size;
-  color: variables.$alternate-font-color;
-
-  @include mixins.tablet() {
-    font-size: variables.$c-blog__header--link-tablet-size;
-  }
-
-  @include mixins.computer() {
-    font-size: variables.$c-blog__header--link-computer-size;
-  }
-}
-
-// LIST
-
-.c-blog__list {
-  padding-bottom: 1rem;
-  background-color: variables.$background-tertiary-color;
-  border: 0.3rem solid variables.$background-primary-color;
-  border-radius: functions.percentageOf(5);
-}
-
 // Uso de :has()
 .c-blog__list:has(.c-blog__list--ul) {
-  padding-block: functions.addSubstractHalf(10, "add");
+  padding-block: functions.addSubstractHalf(1, "add");
 }
 
-.c-blog__list--ul {
-  margin-top: 1rem;
-}
-
-// SECTION
-
-.c-blog__section--flex {
-  @include mixins.base-flex;
-}
 
 // Uso de :is
 .c-blog__section > :is(blockquote, q) {
@@ -83,27 +115,4 @@
 // Uso de :where
 .c-blog__section > :where(blockquote, q) {
   margin-top: 4rem;
-}
-
-
-// IMAGE
-
-.c-blog__figure {
-  @include mixins.base-flex;
-  flex-direction: column; 
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-
-.c-blog__figure--image {
-  max-width: variables.$c-blog__figure--image-mobile-size;
-
-  @include mixins.tablet() {
-    max-width: variables.$c-blog__figure--image-tablet-size;
-  }
-
-  @include mixins.computer() {
-    max-width: variables.$c-blog__figure--image-computer-size;
-  }
 }

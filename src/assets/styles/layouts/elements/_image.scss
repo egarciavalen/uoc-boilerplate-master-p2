@@ -1,7 +1,6 @@
 @use "../settings/variables";
 @use "../tools/functions";
 
-
 img {
   width: functions.percentageOf(100);
   max-width: functions.percentageOf(100);

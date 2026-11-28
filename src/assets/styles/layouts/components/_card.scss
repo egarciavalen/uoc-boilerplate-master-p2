@@ -10,48 +10,53 @@
 
   @include mixins.computer() {
     gap: variables.$gap-cards;
-  }  
-}
-
-.c-cards__card {
-  max-width: 20rem;
-  margin-top: 1rem;
-  text-align: center;
-  background-color: variables.$background-primary-color;
-}
-
-.c-cards__card--body {
-  padding: 1rem;
-  background-color: variables.$background-tertiary-color;
-  border: 0.3rem solid variables.$background-primary-color;
-}
-
-.c-cards__card--title {
-  font-size: variables.$c-cards__card--title-mobile-size;
-  font-weight: bold;
-
-  @include mixins.tablet() {
-    font-size: variables.$c-cards__card--title-tablet-size;
   }
 
-  @include mixins.computer() {
-    font-size: variables.$c-cards__card--title-computer-size;
-  }
-}
+  // *** CARD ***
+  @at-root #{&}__card {
+    max-width: 20rem;
+    margin-top: 1rem;
+    text-align: center;
+    background-color: variables.$background-primary-color;
 
-.c-cards__card--text {
-  font-size: variables.$c-cards__card--text-mobile-size;
-  
-  @include mixins.tablet() {
-    font-size: variables.$c-cards__card--text-tablet-size;
-  }
+    // *** CARD BODY ***
+    @at-root #{&}--body {
+      padding: 1rem;
+      background-color: variables.$background-tertiary-color;
+      border: 0.3rem solid variables.$background-primary-color;
+    }
 
-  @include mixins.computer() {
-    font-size: variables.$c-cards__card--text-computer-size;
-  }
-}
+    // *** CARD TITLE ***
+    @at-root #{&}--title {
+      font-size: variables.$c-cards__card--title-mobile-size;
+      font-weight: bold;
 
-.c-cards__card--img {
-  max-height: 30rem;
-  padding: functions.addSubstractHalf(1, "substract");
+      @include mixins.tablet() {
+        font-size: variables.$c-cards__card--title-tablet-size;
+      }
+
+      @include mixins.computer() {
+        font-size: variables.$c-cards__card--title-computer-size;
+      }
+    }
+
+    // *** CARD TEXT ***
+    @at-root #{&}--text {
+      font-size: variables.$c-cards__card--text-mobile-size;
+      
+      @include mixins.tablet() {
+        font-size: variables.$c-cards__card--text-tablet-size;
+      }
+
+      @include mixins.computer() {
+        font-size: variables.$c-cards__card--text-computer-size;
+      }
+    }
+
+    // *** CARD IMG ***
+    @at-root #{&}--img {
+      max-height: 30rem;
+      padding: functions.addSubstractHalf(1, "substract");
+    }
+  }
 }
