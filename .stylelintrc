@@ -1,11 +1,19 @@
 {
  "extends": ["stylelint-config-recommended-scss", "stylelint-config-recess-order"],
  "rules": {
-    "selector-class-pattern": "^([a-z]-)?.[a-z]([a-z0-9-]+)?(__([a-z0-9]+-?)+)?(--([a-z0-9]+-?)+){0,2}$",
-    "length-zero-no-unit": true,
-    "declaration-no-important": true,
-    "unit-allowed-list": ["px", "rem", "%", "cqh", "cqw", "lvh", "lvw", "fr"],
-    "color-named": "never",
-    "comment-word-disallowed-list": ["/^TODO/"]
+   "selector-class-pattern": "^([a-z]-)?.[a-z]([a-z0-9-]+)?(__([a-z0-9]+-?)+)?(--([a-z0-9]+-?)+){0,2}$",
+   "length-zero-no-unit": true,
+   "declaration-no-important": true,
+   "unit-allowed-list": ["px", "rem", "%", "cqh", "cqw", "lvh", "lvw", "fr"],
+   "color-named": "never",
+   "comment-word-disallowed-list": ["/^TODO/"],
+   "block-no-empty": true,
+   "comment-no-empty": true,
+   "named-grid-areas-no-invalid": true,
+   "selector-no-invalid": true,
+   "font-family-no-missing-generic-family-keyword": true,
+   "property-no-unknown": true,
+   "comment-whitespace-inside": "always",
+   "function-disallowed-list": ["lch", "lab"]
  }
 }
