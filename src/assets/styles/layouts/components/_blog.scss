@@ -9,6 +9,15 @@
     ". . . ."
     ". a a ."
     ". . . ."
+    ". . . .";
+}
+
+// Uso de :has()
+.c-blog__header:has(.c-blog__header--author) {
+  grid-template-areas:
+    ". . . ."
+    ". a a ."
+    ". . . ."
     ". b b .";
 }
 
@@ -46,8 +55,13 @@
 .c-blog__list {
   background-color: variables.$background-tertiary-color;
   border: 0.3rem solid variables.$background-primary-color;
-  padding-block: 1.5rem;
   border-radius: 5%;
+  padding-bottom: 1rem;
+}
+
+// Uso de :has()
+.c-blog__list:has(.c-blog__list--ul) {
+  padding-block: 1.5rem;
 }
 
 .c-blog__list--ul {
