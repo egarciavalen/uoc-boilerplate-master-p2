@@ -1,10 +1,13 @@
 // Variables que modificar sobre bootstrap
 
+@use "../settings/variables";
+
+
 // Color del botón
-$primary: #ac50f7;
+$primary: variables.$form-background-color;
 
 // Fuente de letra
-$font-family-base: 'Lexend Variable', sans-serif;
+$font-family-base: variables.$html-font-family;
 
 // Importación de Bootstrap
 @import "bootstrap/scss/bootstrap";
