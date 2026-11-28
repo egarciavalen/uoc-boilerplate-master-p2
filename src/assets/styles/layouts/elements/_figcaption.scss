@@ -2,9 +2,9 @@
 @use "../tools/mixins";
 
 figcaption {
-  text-align: variables.$figcaption-mobile-size;
   font-size: 1.3rem;
   color: variables.$normal-font-color;
+  text-align: variables.$figcaption-mobile-size;
 
   @include mixins.tablet() {
     font-size: variables.$figcaption-tablet-size;

@@ -4,8 +4,8 @@
 h1 {
   display: inline-block;
   margin-block: 1rem;
-  font-weight: bold;
   font-size: variables.$h1-mobile-size;
+  font-weight: bold;
 
   @include mixins.tablet() {
     font-size: variables.$h1-tablet-size;

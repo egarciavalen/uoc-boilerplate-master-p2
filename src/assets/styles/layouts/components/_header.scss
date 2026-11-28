@@ -3,10 +3,11 @@
 
 .c-header {
   @include mixins.base-flex;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
   // Flex
   flex-direction: column;
+
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 
   @include mixins.computer() {
     flex-direction: row;
@@ -23,11 +24,12 @@
 }
 
 .c-header__nav {
-  padding-bottom: 1rem;
-  text-align: center;
   // Flex
   align-items: center;
   justify-content: center;
+
+  padding-bottom: 1rem;
+  text-align: center;
 
   @include mixins.computer() {
     gap: rem;
@@ -37,8 +39,8 @@
 .c-header__nav--items {
 
    @include mixins.computer() {
-    margin-top: 2rem;
     gap: 3rem;
+    margin-top: 2rem;
   } 
 }
 .c-header__nav--first {

@@ -6,13 +6,13 @@ ul {
 }
 
 ol {
+  padding-left: 0.5rem;
+  font-size: variables.$ol-mobile-size;
+  color: variables.$normal-font-color;
   // Se quitan las listas por defecto
   list-style: none;
   // Reinicio para eliminar los números por defecto 
   counter-reset: item;  
-  color: variables.$normal-font-color;
-  font-size: variables.$ol-mobile-size;
-  padding-left: 0.5rem;
 
   @include mixins.tablet() {
     font-size: variables.$ol-tablet-size;
@@ -24,22 +24,22 @@ ol {
 }
 
 ol > li {
-  margin-right:0.5rem;
   margin-top: 1rem;
+  margin-right:0.5rem;
 }
 
 ol > li::before {
   // Separación de los elementos
   display: inline-block;
+  // Margen interno para que se vea bien
+  padding-inline: 0.75rem;
+  // Color + color de fondo
+  color: rgb(255, 255, 255);
   // Gestión del contador
   content: counter(item);
   counter-increment: item;
-  // Color + color de fondo
   background-color: variables.$background-primary-color;
-  color: white;
   // Borde
   border: 0.2rem solid variables.$background-primary-color;
   border-radius: 50%;
-  // Margen interno para que se vea bien
-  padding-inline: 0.75rem;
 }

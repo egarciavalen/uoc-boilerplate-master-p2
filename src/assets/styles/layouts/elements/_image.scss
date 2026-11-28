@@ -3,9 +3,9 @@
 
 
 img {
-  max-width: functions.percentageOf(100);
-  max-height: functions.percentageOf(100);
   width: functions.percentageOf(100);
+  max-width: functions.percentageOf(100);
   height: functions.percentageOf(100);
+  max-height: functions.percentageOf(100);
   object-fit: cover;
 }

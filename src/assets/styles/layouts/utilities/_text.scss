@@ -10,9 +10,9 @@
   }
 
   @at-root #{&}__background {
-    background-color: variables.$background-primary-color;
-    color: variables.$alternate-element-color;
     padding: 1rem;  
+    color: variables.$alternate-element-color;
+    background-color: variables.$background-primary-color;
   }
 }
 

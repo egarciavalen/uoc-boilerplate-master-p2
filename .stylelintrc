@@ -1,10 +1,10 @@
 {
  "extends": ["stylelint-config-recommended-scss", "stylelint-config-recess-order"],
  "rules": {
-    "selector-class-pattern": "^.[a-z]([a-z0-9-]+)?(__([a-z0-9]+-?)+)?(--([a-z0-9]+-?)+){0,2}$",
+    "selector-class-pattern": "^([a-z]-)?.[a-z]([a-z0-9-]+)?(__([a-z0-9]+-?)+)?(--([a-z0-9]+-?)+){0,2}$",
     "length-zero-no-unit": true,
     "declaration-no-important": true,
-    "unit-allowed-list": ["px", "rem", "%"],
+    "unit-allowed-list": ["px", "rem", "%", "cqh", "cqw", "lvh", "lvw", "fr"],
     "color-named": "never",
     "comment-word-disallowed-list": ["/^TODO/"]
  }

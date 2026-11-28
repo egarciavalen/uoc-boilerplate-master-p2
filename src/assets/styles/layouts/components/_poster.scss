@@ -22,13 +22,12 @@
 
 .c-poster__enlace {
   display: block;
-  margin-inline: 5rem;
-  background-color: variables.$background-alternate-color;
-  color: variables.$alternate-font-color;
   padding: 1rem;
-  margin: 2rem;
+  margin-inline: 5rem;
   font-weight: bold; 
+  color: variables.$alternate-font-color;
   text-decoration: none;
+  background-color: variables.$background-alternate-color;
 }
 
 @supports (display: grid) {
@@ -36,13 +35,13 @@
 
     .c-poster {
       display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-      grid-template-rows: 1fr 1fr 1fr;
       grid-template-areas:
         ". . . a a a"
         "b b b c c c"
         "d d . e e e"
         ". f f f f .";
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     }
 
     .c-poster__image {
@@ -50,58 +49,57 @@
     }
 
     .c-poster__title--one {
-      grid-area: a;
-      border-radius: functions.percentageOf(0);
-      font-size: functions.addSubstractHalf(2.5, "add");
       display: flex;
+      grid-area: a;
       align-items: center;
       justify-content: center;
       padding: 0;
       margin: 0;
+      font-size: functions.addSubstractHalf(2.5, "add");
+      border-radius: functions.percentageOf(0);
     }
 
     .c-poster__title--two {
-      grid-area: b;
-      border-radius: functions.percentageOf(0);
-      font-size: functions.addSubstractHalf(2.5, "add");
       display: flex;
+      grid-area: b;
       align-items: center;
       justify-content: center;
       padding: 0;
       margin: 0;
+      font-size: functions.addSubstractHalf(2.5, "add");
+      border-radius: functions.percentageOf(0);
     }
 
     .c-poster__title--three {
-      grid-area: e;
-      border-radius: functions.percentageOf(0);
-      font-size: functions.addSubstractHalf(2.5, "add");
       display: flex;
+      grid-area: e;
       align-items: center;
       justify-content: center;
       padding: 0;
       margin: 0;
+      font-size: functions.addSubstractHalf(2.5, "add");
+      border-radius: functions.percentageOf(0);
     }
 
     .c-poster__jornadas {
-      display: initial;
+      display: flex;
       grid-area: d;
+      align-items: center;
       font-size: functions.addSubstractHalf(2.5, "add");
       border-radius: functions.percentageOf(0);    
-      display: flex;
-      align-items: center;
     }
 
     .c-poster__enlace {
-      grid-area: c;
-      font-size: functions.addSubstractHalf(3, "substract");
       display: flex;
+      grid-area: c;
       align-items: center;
       justify-content: center;
+      font-size: functions.addSubstractHalf(3, "substract");
     }
 
     .c-poster__descripcion {
-      margin-block: functions.addSubstractHalf(3.5, "substract");
       grid-area: f;
+      margin-block: functions.addSubstractHalf(3.5, "substract");
     }
   }
 }

@@ -3,8 +3,8 @@
 
 blockquote {
   font-size: variables.$blockquoute-mobile-size;
-  font-weight: bold;
   font-style: italic;
+  font-weight: bold;
 
   @include mixins.tablet() {
     font-size: variables.$blockquoute-tablet-size;

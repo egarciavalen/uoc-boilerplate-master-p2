@@ -1,7 +1,7 @@
 @use "../settings/variables";
 
 header {
-  background-color: variables.$background-primary-color;
   // CONTENEDOR
   container-type: inline-size;
+  background-color: variables.$background-primary-color;
 }

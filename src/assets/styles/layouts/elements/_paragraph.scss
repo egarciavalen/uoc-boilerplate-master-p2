@@ -2,10 +2,9 @@
 @use "../tools/mixins";
 
 p {
+  margin-block: 1.5rem;
   font-size: variables.$p-mobile-size;
   color: variables.$normal-font-color;
-  margin-block: 1.5rem;
-
   @include mixins.tablet() {
     font-size: variables.$p-tablet-size;
   }

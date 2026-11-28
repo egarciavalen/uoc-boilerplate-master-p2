@@ -3,8 +3,8 @@
 
 .c-footer {
   @include mixins.base-flex;
-  background-color: variables.$background-primary-color;
   padding-top: 2rem;
+  background-color: variables.$background-primary-color;
 
   @include mixins.not-mobile() {
     flex-direction: column;  
@@ -21,16 +21,15 @@
   padding-top: 1rem;
   @include mixins.not-mobile() {
     @include mixins.base-flex;
+    flex-direction: row;
+    justify-content: space-between;
     margin-right: initial;
     margin-left: 5rem;
-    justify-content: space-between;
-    flex-direction: row;
-
   }
 
   @include mixins.tablet() {
-    margin-left: 2rem;
     flex-direction: column;
+    margin-left: 2rem;
   }
 
   @include mixins.computer() {
@@ -40,17 +39,17 @@
 
 .c-footer__logo {
   @include mixins.base-flex;
+  gap: 0.2rem;
   align-items: center;
   justify-content: center;
-  gap: 0.2rem;
-
 }
 
 .c-footer__links {
-  margin-top: 0.3rem;
   // Flex
   align-items: center;
   justify-content: center;
+
+  margin-top: 0.3rem;
 
   @include mixins.not-mobile() {
     @include mixins.base-flex;
@@ -63,9 +62,9 @@
 
 .c-footer__social {
   @include mixins.base-flex;
+  flex-wrap: initial;
   align-items: center;
   justify-content: center;
-  flex-wrap: initial;
   margin-top: 2rem;
 
   @include mixins.not-mobile() {
@@ -77,8 +76,8 @@
 /******************************/
 
 .c-footer__uoc {
-  background-color: variables.$background-alternate-color;
   padding-block: 1rem;
+  background-color: variables.$background-alternate-color;
 }
 
 .c-footer__uoc--logo {
@@ -89,8 +88,8 @@
 
   @include mixins.computer() {
     flex-direction: row;
-    gap: 5rem;
     flex-wrap: initial;
+    gap: 5rem;
   }
 }
 

@@ -4,9 +4,9 @@
 
 .c-cards {
   @include mixins.base-flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
-  flex-direction: row;
 
   @include mixins.computer() {
     gap: variables.$gap-cards;
@@ -14,23 +14,22 @@
 }
 
 .c-cards__card {
-  background-color: variables.$background-primary-color;
-  text-align: center;
-  margin-top: 1rem;
   max-width: 20rem;
+  margin-top: 1rem;
+  text-align: center;
+  background-color: variables.$background-primary-color;
 }
 
 .c-cards__card--body {
+  padding: 1rem;
   background-color: variables.$background-tertiary-color;
   border: 0.3rem solid variables.$background-primary-color;
-  padding: 1rem;
 }
 
 .c-cards__card--title {
+  font-size: variables.$c-cards__card--title-mobile-size;
   font-weight: bold;
 
-  font-size: variables.$c-cards__card--title-mobile-size;
-  
   @include mixins.tablet() {
     font-size: variables.$c-cards__card--title-tablet-size;
   }
@@ -53,6 +52,6 @@
 }
 
 .c-cards__card--img {
-  padding: functions.addSubstractHalf(1, "substract");
   max-height: 30rem;
+  padding: functions.addSubstractHalf(1, "substract");
 }
