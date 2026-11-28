@@ -62,7 +62,7 @@
 .c-userform__label {
   padding: 0.2rem;
   border-radius: functions.percentageOf(10);
-  margin-bottom: 1rem;
+  margin-bottom: functions.addSubstractHalf(0.5, "add");
   background-color: variables.$c-userform__label-background-color;
 }
 

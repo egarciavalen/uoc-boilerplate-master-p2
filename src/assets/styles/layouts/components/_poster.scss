@@ -52,7 +52,7 @@
     .c-poster__title--one {
       grid-area: a;
       border-radius: functions.percentageOf(0);
-      font-size: 3rem;
+      font-size: functions.addSubstractHalf(2.5, "add");
       display: flex;
       align-items: center;
       justify-content: center;
@@ -63,7 +63,7 @@
     .c-poster__title--two {
       grid-area: b;
       border-radius: functions.percentageOf(0);
-      font-size: 3rem;
+      font-size: functions.addSubstractHalf(2.5, "add");
       display: flex;
       align-items: center;
       justify-content: center;
@@ -74,7 +74,7 @@
     .c-poster__title--three {
       grid-area: e;
       border-radius: functions.percentageOf(0);
-      font-size: 3rem;
+      font-size: functions.addSubstractHalf(2.5, "add");
       display: flex;
       align-items: center;
       justify-content: center;
@@ -85,7 +85,7 @@
     .c-poster__jornadas {
       display: initial;
       grid-area: d;
-      font-size: 3rem;
+      font-size: functions.addSubstractHalf(2.5, "add");
       border-radius: functions.percentageOf(0);    
       display: flex;
       align-items: center;
@@ -93,14 +93,14 @@
 
     .c-poster__enlace {
       grid-area: c;
-      font-size: 2.5rem;
+      font-size: functions.addSubstractHalf(3, "substract");
       display: flex;
       align-items: center;
       justify-content: center;
     }
 
     .c-poster__descripcion {
-      margin-block: 3rem;
+      margin-block: functions.addSubstractHalf(3.5, "substract");
       grid-area: f;
     }
   }

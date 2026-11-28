@@ -1,6 +1,19 @@
 @use 'sass:math';
 
-@function percentageOf($numero) {
+@function percentageOf($number) {
   // % para indicar que se devuelve un porcentaje
-  @return math.div($numero, 100) * 100%;
+  @return math.div($number, 100) * 100%;
+}
+
+@function addSubstractHalf($number, $operation) {
+
+  @if ($operation == "add") {
+    @return $number + 0.5rem;
+  }
+
+  @if ($operation == "substract") {
+    @return $number - 0.5rem;
+  }
+
+  @return 0;
 }

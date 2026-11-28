@@ -62,7 +62,7 @@
 
 // Uso de :has()
 .c-blog__list:has(.c-blog__list--ul) {
-  padding-block: 1.5rem;
+  padding-block: functions.addSubstractHalf(10, "add");
 }
 
 .c-blog__list--ul {
