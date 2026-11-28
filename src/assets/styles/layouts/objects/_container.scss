@@ -1,15 +1,16 @@
 @use "../tools/mixins";
+@use "../tools/functions";
 
 .o-container {
-  max-width: 90%;
+  max-width: functions.percentageOf(90);
   height: auto;
   margin-inline: auto;
-}
 
-.o-container--reduced {
-  max-width: 80%;
+  @at-root #{&}--reduced {
+    max-width: functions.percentageOf(80);
 
-  @include mixins.not-mobile() {
-    max-width: 60%;  
+    @include mixins.not-mobile() {
+      max-width: functions.percentageOf(60);  
+    }
   }
 }

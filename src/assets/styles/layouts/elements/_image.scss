@@ -1,10 +1,11 @@
 @use "../settings/variables";
+@use "../tools/functions";
 
 
 img {
-  max-width: 100%;
-  max-height: 100%;
-  width: 100%;
-  height: 100%;
+  max-width: functions.percentageOf(100);
+  max-height: functions.percentageOf(100);
+  width: functions.percentageOf(100);
+  height: functions.percentageOf(100);
   object-fit: cover;
 }

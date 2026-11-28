@@ -1,1 +1,6 @@
-// TODO: definir funciones
+@use 'sass:math';
+
+@function percentageOf($numero) {
+  // % para indicar que se devuelve un porcentaje
+  @return math.div($numero, 100) * 100%;
+}

@@ -1,23 +1,23 @@
 @use "../settings/variables";
 @use "../tools/mixins";
-
+@use "../tools/functions";
 
 .c-poster__jornadas {
   display: inline-block;
   margin: 2rem;
-  border-radius: 10%;
+  border-radius: functions.percentageOf(10);
 }
 
 .c-poster__title--one {
-  border-radius: 10%;
+  border-radius: functions.percentageOf(10);
 }
 
 .c-poster__title--two {
-  border-radius: 10%;
+  border-radius: functions.percentageOf(10);
 }
 
 .c-poster__title--three {
-  border-radius: 10%;
+  border-radius: functions.percentageOf(10);
 }
 
 .c-poster__enlace {
@@ -51,7 +51,7 @@
 
     .c-poster__title--one {
       grid-area: a;
-      border-radius: 0%;
+      border-radius: functions.percentageOf(0);
       font-size: 3rem;
       display: flex;
       align-items: center;
@@ -62,7 +62,7 @@
 
     .c-poster__title--two {
       grid-area: b;
-      border-radius: 0%;
+      border-radius: functions.percentageOf(0);
       font-size: 3rem;
       display: flex;
       align-items: center;
@@ -73,7 +73,7 @@
 
     .c-poster__title--three {
       grid-area: e;
-      border-radius: 0%;
+      border-radius: functions.percentageOf(0);
       font-size: 3rem;
       display: flex;
       align-items: center;
@@ -86,7 +86,7 @@
       display: initial;
       grid-area: d;
       font-size: 3rem;
-      border-radius: 0%;      
+      border-radius: functions.percentageOf(0);    
       display: flex;
       align-items: center;
     }

@@ -1,11 +1,12 @@
 @use "../settings/variables";
 @use "../tools/mixins";
+@use "../tools/functions";
 
 .c-userform {
   margin-top: 1rem;
   background-color: variables.$form-background-color;
   border: 0.3rem solid variables.$background-primary-color;
-  border-radius: 5%;
+  border-radius: functions.percentageOf(5);
 
   height: variables.$form-height-mobile-size;
   width: variables.$form-width-mobile-size;
@@ -60,7 +61,7 @@
 
 .c-userform__label {
   padding: 0.2rem;
-  border-radius: 10%;
+  border-radius: functions.percentageOf(10);
   margin-bottom: 1rem;
   background-color: variables.$c-userform__label-background-color;
 }

@@ -1,15 +1,19 @@
 @use "../settings/variables";
 
-.u-text__color--alternate {
-  color: variables.$alternate-font-color;
+.u-text {
+  @at-root #{&}__color--alternate {
+    color: variables.$alternate-font-color;
+  }
+
+  @at-root #{&}__fill--alternate {
+    fill: variables.$alternate-element-color;
+  }
+
+  @at-root #{&}__background {
+    background-color: variables.$background-primary-color;
+    color: variables.$alternate-element-color;
+    padding: 1rem;  
+  }
 }
 
-.u-text__fill--alternate {
-  fill: variables.$alternate-element-color;
-}
 
-.u-text__background {
-  background-color: variables.$background-primary-color;
-  color: variables.$alternate-element-color;
-  padding: 1rem;
-}

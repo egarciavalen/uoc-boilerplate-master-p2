@@ -1,5 +1,6 @@
 @use "../settings/variables";
 @use "../tools/mixins";
+@use "../tools/functions";
 
 .c-blog__header {
   display: grid;
@@ -55,7 +56,7 @@
 .c-blog__list {
   background-color: variables.$background-tertiary-color;
   border: 0.3rem solid variables.$background-primary-color;
-  border-radius: 5%;
+  border-radius: functions.percentageOf(5);
   padding-bottom: 1rem;
 }
 
