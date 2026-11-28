@@ -7,11 +7,11 @@
 @layer vendor, settings, tools, generic, elements, objects, components, utilities;
 
 // Importación de las diferentes capas
-@layer vendor {@include meta.load-css("vendor/_vendor.scss") }
-@layer settings {@include meta.load-css("settings/_settings.scss")}
-@layer tools {@include meta.load-css("tools/_tools.scss")}
-@layer generic {@include meta.load-css("generic/_generic.scss")}
-@layer elements {@include meta.load-css("elements/_elements.scss")}
-@layer objects {@include meta.load-css("objects/_objects.scss")}
-@layer components {@include meta.load-css("components/_components.scss")}
-@layer utilities {@include meta.load-css("utilities/_utilities.scss")}
+@layer vendor {@include meta.load-css("vendor/vendor") }
+@layer settings {@include meta.load-css("settings/settings")}
+@layer tools {@include meta.load-css("tools/tools")}
+@layer generic {@include meta.load-css("generic/generic")}
+@layer elements {@include meta.load-css("elements/elements")}
+@layer objects {@include meta.load-css("objects/objects")}
+@layer components {@include meta.load-css("components/components")}
+@layer utilities {@include meta.load-css("utilities/utilities")}
